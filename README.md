@@ -1,5 +1,10 @@
-# t319_aprendizado_de_maquina
+# T319 - Introdução ao Aprendizado de Máquina
+
 Introdução ao aprendizado de máquina
+
+## Material
+
+O material das aulas pode ser encontrado na pasta **slides**.
 
 ## Laboratórios
 
