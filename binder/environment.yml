@@ -1,0 +1,14 @@
+name: python-programming
+channels:
+    - defaults
+    - conda-forge
+dependencies:
+    - python
+    - numpy
+    - pip
+    - pip:
+        - pandas
+        - matplotlib
+        - numpy
+        - scipy
+
