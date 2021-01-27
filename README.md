@@ -12,9 +12,7 @@ https://github.com/zz4fap/t319_aprendizado_de_maquina/tree/main/slides
 
 Aqui vocês encontram os links para os laboratórios. Vocês podem baixar os notebooks e resolve-los localmente ou usar os links para resolve-los na nuvem, ou seja, online.
 
-**Instruções para resolução e entrega dos laboratórios**
-
-[Resolução](https://github.com/zz4fap/t319_aprendizado_de_maquina/blob/main/docs/Resolu%C3%A7%C3%A3o%20e%20entrega%20dos%20laborat%C3%B3rios.pdf)
+**Instruções para resolução e entrega dos laboratórios**: [!Resolução e entrega dos laboratórios](https://github.com/zz4fap/t319_aprendizado_de_maquina/blob/main/docs/Resolu%C3%A7%C3%A3o%20e%20entrega%20dos%20laborat%C3%B3rios.pdf)
 
 ### Laboratório 1
 
