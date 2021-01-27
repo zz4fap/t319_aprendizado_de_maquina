@@ -2,7 +2,7 @@
 
 Introdução ao aprendizado de máquina
 
-## Material
+## Material das aulas
 
 O material das aulas pode ser encontrado na pasta **slides** e pode ser acessado através do link abaixo.
 
