@@ -14,4 +14,7 @@ Aqui vocês encontram os links para os laboratórios. Vocês podem baixar os not
 
 ### Laboratório 1
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zz4fap/t319_aprendizado_de_maquina/main?filepath=labs%2FLaboratorio1.ipynb)
+
+[![Google Colab](https://badgen.net/badge/Launch/on%20Google%20Colab/blue?icon=terminal)](https://colab.research.google.com/github/zz4fap/t319_aprendizado_de_maquina/blob/main/labs/Laboratorio1.ipynb)
 
