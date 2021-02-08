@@ -12,9 +12,11 @@ O material das aulas pode ser encontrado na pasta **slides** e pode ser acessado
 
 ## Laboratórios
 
-Aqui vocês encontram os links para os laboratórios. Vocês podem baixar os notebooks e resolve-los localmente ou usar os links para resolve-los na nuvem, ou seja, online.
+Aqui vocês encontram os links para os laboratórios. Vocês podem baixar os notebooks e resolve-los localmente ou usar os links abaixo para resolve-los na nuvem, ou seja, online.
 
 **Instruções para resolução e entrega dos laboratórios**: [Resolução e entrega dos laboratórios](https://github.com/zz4fap/t319_aprendizado_de_maquina/blob/main/docs/Resolu%C3%A7%C3%A3o%20e%20entrega%20dos%20laborat%C3%B3rios.pdf)
+
+**Observação**: Vocês podem executar os notebooks tanto no Binder quanto no Google Colab, porém, o Google Colab é mais rápido e tem maior disponibilidade de servidores.
 
 ### Laboratório 1
 
