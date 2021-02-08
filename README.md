@@ -1,6 +1,6 @@
 # T319 - Introdução ao Aprendizado de Máquina
 
-Introdução ao aprendizado de máquina
+Repositório contendo o material da disciplina "Introdução ao aprendizado de máquina".
 
 ## Material das aulas
 
