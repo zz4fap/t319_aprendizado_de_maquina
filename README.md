@@ -6,7 +6,9 @@ Introdução ao aprendizado de máquina
 
 O material das aulas pode ser encontrado na pasta **slides** e pode ser acessado através dos links abaixo.
 
-[Introdução](https://github.com/zz4fap/t319_aprendizado_de_maquina/blob/main/slides/T319_Introdu%C3%A7%C3%A3o.pdf)
+1. [Introdução](https://github.com/zz4fap/t319_aprendizado_de_maquina/blob/main/slides/T319_Introdu%C3%A7%C3%A3o(slides).pdf)
+
+2. [Regressão (Parte I)](https://github.com/zz4fap/t319_aprendizado_de_maquina/blob/main/slides/T319_Regress%C3%A3o_Linear%20(Parte%20I)(slides).pdf)
 
 ## Laboratórios
 
