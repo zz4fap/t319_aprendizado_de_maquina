@@ -4,9 +4,9 @@ Introdução ao aprendizado de máquina
 
 ## Material das aulas
 
-O material das aulas pode ser encontrado na pasta **slides** e pode ser acessado através do link abaixo.
+O material das aulas pode ser encontrado na pasta **slides** e pode ser acessado através dos links abaixo.
 
-https://github.com/zz4fap/t319_aprendizado_de_maquina/tree/main/slides
+[Introdução](https://github.com/zz4fap/t319_aprendizado_de_maquina/blob/main/slides/T319_Introdu%C3%A7%C3%A3o.pdf)
 
 ## Laboratórios
 
