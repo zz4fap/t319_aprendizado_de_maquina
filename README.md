@@ -10,6 +10,8 @@ O material das aulas pode ser encontrado na pasta **slides** e pode ser acessado
 
 2. [Regressão (Parte I)](https://github.com/zz4fap/t319_aprendizado_de_maquina/blob/main/slides/T319_Regress%C3%A3o_Linear%20(Parte%20I)(slides).pdf)
 
+3. [Regressão (Parte II)](https://github.com/zz4fap/t319_aprendizado_de_maquina/blob/main/slides/T319_Regress%C3%A3o_Linear%20(Parte%20II)(slides).pdf)
+
 ## Laboratórios
 
 Aqui vocês encontram os links para os laboratórios. Vocês podem baixar os notebooks e resolve-los localmente ou usar os links abaixo para resolve-los na nuvem, ou seja, online.
