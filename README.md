@@ -40,13 +40,17 @@ Aqui vocês encontram os links para os laboratórios. Vocês podem baixar os not
 
 [![Google Colab](https://badgen.net/badge/Launch/on%20Google%20Colab/blue?icon=terminal)](https://colab.research.google.com/github/zz4fap/t319_aprendizado_de_maquina/blob/main/labs/Laboratorio3.ipynb)
 
-### Laboratório 4
+### Laboratório 4 - Parte I
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zz4fap/t319_aprendizado_de_maquina/main?filepath=labs%2FLaboratorio4.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zz4fap/t319_aprendizado_de_maquina/main?filepath=labs%2FLaboratorio4%20-%20Parte%20I.ipynb)
 
-[![Google Colab](https://badgen.net/badge/Launch/on%20Google%20Colab/blue?icon=terminal)](https://colab.research.google.com/github/zz4fap/t319_aprendizado_de_maquina/blob/main/labs/Laboratorio4.ipynb)
+[![Google Colab](https://badgen.net/badge/Launch/on%20Google%20Colab/blue?icon=terminal)](https://colab.research.google.com/github/zz4fap/t319_aprendizado_de_maquina/blob/main/labs/Laboratorio4%20-%20Parte%20I.ipynb)
 
+### Laboratório 4 - Parte II
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zz4fap/t319_aprendizado_de_maquina/main?filepath=labs%2FLaboratorio4%20-%20Parte%20II.ipynb)
+
+[![Google Colab](https://badgen.net/badge/Launch/on%20Google%20Colab/blue?icon=terminal)](https://colab.research.google.com/github/zz4fap/t319_aprendizado_de_maquina/blob/main/labs/Laboratorio4%20-%20Parte%20II.ipynb)
 
 
 
