@@ -252,7 +252,7 @@ def generateDatasets2(groupNumber, N):
     y_train_noisy = y_train + w
     
     # Generate test dataset.
-    N = N/2
+    N = int(N/2)
     x_test = np.linspace(-1,1,N).reshape(N,1)
     y_test = a0 + a1*(x_test**degrees[0]) + a2*(x_test**degrees[1]) + a3*(x_test**degrees[2])
     w = np.sqrt(noise_var)*np.random.randn(N,1)
