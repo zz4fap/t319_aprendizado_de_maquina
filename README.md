@@ -66,9 +66,9 @@ Aqui vocês encontram os links para os laboratórios. Vocês podem baixar os not
 
 ### Projeto Final
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zz4fap/t319_aprendizado_de_maquina/main?filepath=projeto%2Fprojeto_final_T319_1S2022.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zz4fap/t319_aprendizado_de_maquina/main?filepath=projeto%2Fprojeto_final_T319_2S2022.ipynb)
 
-[![Google Colab](https://badgen.net/badge/Launch/on%20Google%20Colab/blue?icon=terminal)](https://colab.research.google.com/github/zz4fap/t319_aprendizado_de_maquina/blob/main/projeto/projeto_final_T319_1S2022.ipynb)
+[![Google Colab](https://badgen.net/badge/Launch/on%20Google%20Colab/blue?icon=terminal)](https://colab.research.google.com/github/zz4fap/t319_aprendizado_de_maquina/blob/main/projeto/projeto_final_T319_2S2022.ipynb)
 
 <img src="/figures/python_logo.png" width="200" height="200">                                       <img src="/figures/inatel_logo.png">
 
