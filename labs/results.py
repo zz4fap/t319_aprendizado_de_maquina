@@ -50,7 +50,7 @@ def plotResults2(Jgd, J, A1, A2, a_opt, a_hist, alpha_hist, iteration, maxX, max
     ax2.set_yscale('log')
     ax2.set_xlabel('Iteration', fontsize=14)
     ax2.set_ylabel('$J_e$', fontsize=14)
-    ax2.set_title('Error vs. Epoch number')
+    ax2.set_title('Error vs. Iteration number')
     ax2.set_xlim((0, iteration-1))
 
     left, bottom, width, height = [0.45, 0.5, 0.16, 0.3]
@@ -87,7 +87,7 @@ def plotResults3(Jgd, J, A1, A2, a_opt, a_hist, alpha_hist, iteration, maxX, max
     ax2.set_yscale('log')
     ax2.set_xlabel('Iteration', fontsize=14)
     ax2.set_ylabel('$J_e$', fontsize=14)
-    ax2.set_title('Error vs. Epoch number')
+    ax2.set_title('Error vs. Iteration number')
     ax2.set_xlim((0, iteration-1))
 
     left, bottom, width, height = [0.45, 0.5, 0.16, 0.3]
