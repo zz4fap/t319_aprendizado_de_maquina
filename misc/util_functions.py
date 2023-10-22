@@ -41,6 +41,12 @@ def batchGradientDescent(X, y, alpha=0.4, n_iterations=1000, precision=0.00001):
         iteration = iteration + 1
     return a, Jgd, a_hist, grad_hist, iteration
 
+def calculateOptimumWeights(X, y):
+    """
+    Calculate the optimum weights with the normal equation, i.e., the closed form solution.
+    """
+    return np.linalg.pinv(np.transpose(X).dot(X)).dot(np.transpose(X).dot(y))
+
 def calculateErrorSurface(X, y, llim1=-12.0, ulim1=14.0, llim2=-12.0, ulim2=14.0):
     """
     Generate data points for plotting the error surface.
@@ -151,7 +157,6 @@ def plotHistogram(x1, x2):
     plt.grid()
     plt.title('Attributes\' Histogram')
     plt.show()    
-    
     
 def generateDataSet(N):
     x = np.linspace(-1.47,1,N).reshape(N,1)
