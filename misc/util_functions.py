@@ -142,11 +142,16 @@ def plotGradientHistory(grad_hist, iteration, x_max=50):
     plt.show()
     
 def plotHistogram(x1, x2):
+    plt.figure()
     plt.hist(x1, bins=100, density=True, label='x1')
-    plt.hist(x2, bins=100, density=True, label='x2')
-    plt.legend()
-    plt.title('Histograma')
-    plt.show()
+    plt.hist(x2, bins=100, density=True, alpha=0.7, label='x2')
+    plt.xlabel('Attribute values')
+    plt.ylabel('Estimated probability')
+    plt.legend(fontsize=14)
+    plt.grid()
+    plt.title('Attributes\' Histogram')
+    plt.show()    
+    
     
 def generateDataSet(N):
     x = np.linspace(-1.47,1,N).reshape(N,1)
