@@ -107,7 +107,7 @@ def plotErroVersusIteration(Jgd, iteration):
     plt.yscale('log')
     plt.xlabel('Epoch', fontsize=14)
     plt.ylabel('$J_e$', fontsize=14)
-    plt.title('Error vs. Iteration number')
+    plt.title('Error vs. Epoch number')
     plt.grid()
     plt.show()
     
@@ -122,7 +122,7 @@ def plotGradientHistory(grad_hist, iteration, x_max=50):
     ax1.plot(np.arange(0, iteration), grad_hist[0,0:iteration], 'b', label='$a_1$')
     ax1.set_xlabel('Epoch', fontsize=14)
     ax1.set_ylabel('$\\nabla_e$', fontsize=14)
-    ax1.set_title('Gradient vs. Iteration number')
+    ax1.set_title('Gradient vs. Epoch number')
     ax1.grid()
     ax1.legend()
 
@@ -137,7 +137,7 @@ def plotGradientHistory(grad_hist, iteration, x_max=50):
     ax2.plot(np.arange(0, iteration), grad_hist[1,0:iteration], 'r--', label='$a_2$')
     ax2.set_xlabel('Epoch', fontsize=14)
     ax2.set_ylabel('$\\nabla_e$', fontsize=14)
-    ax2.set_title('Gradient vs. Iteration number')
+    ax2.set_title('Gradient vs. Epoch number')
     ax2.grid()
     ax2.legend()
 
@@ -149,7 +149,7 @@ def plotGradientHistory(grad_hist, iteration, x_max=50):
     ax3.grid()
 
     plt.show()
-    
+
 def plotHistogram(x1, x2):
     plt.figure()
     plt.hist(x1, bins=100, density=True, label='x1')
