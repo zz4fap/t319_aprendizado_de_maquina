@@ -68,8 +68,8 @@ def calculateErrorSurface(X, y, llim1=-12.0, ulim1=14.0, llim2=-12.0, ulim2=14.0
     J = np.zeros((M,M))
     for iter1 in range(0, M):
         for iter2 in range(0, M):
-            yhat = A1[iter1][iter2]*x1 + A2[iter1][iter2]*x2
-            J[iter1][iter2] = (1.0/N)*np.sum(np.square(y - yhat))
+            yhat = A1[iter1,iter2]*x1 + A2[iter1,iter2]*x2
+            J[iter1,iter2] = (1.0/N)*np.sum(np.square(y - yhat))
 
     return J, A1, A2
 
@@ -114,8 +114,8 @@ def plotErroVersusIteration(Jgd, iteration):
     
 def plotGradientHistory(grad_hist, iteration, x_max=50):
     
-    y_min = round(max([min(grad_hist[0,0:iteration]), min(grad_hist[1,0:iteration])]))-1.0
-    y_max = np.ceil(max([max(grad_hist[0,0:iteration]), max(grad_hist[1,0:iteration])]))+1.0
+    y_min = round(max([min(grad_hist[0, 0:iteration]), min(grad_hist[1, 0:iteration])]))-1.0
+    y_max = np.ceil(max([max(grad_hist[0, 0:iteration]), max(grad_hist[1, 0:iteration])]))+1.0
 
     fig = plt.figure(figsize=(15,5))
 
