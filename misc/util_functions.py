@@ -89,10 +89,11 @@ def plotCostFunction(A1, A2, J, a_opt, a_hist, iteration, llim1=-12.0, ulim1=14.
     ax = plt.subplot(1, 2, 2)
     cp = plt.contour(A1, A2, J)
     plt.clabel(cp, inline=1, fontsize=10)
-    plt.plot(a_opt[0], a_opt[1], c='r', marker='*', markersize=14)
+    plt.plot(a_opt[0], a_opt[1], c='r', marker='*', markersize=14, label='Optimal solution')
     plt.plot(a_hist[0, 0:iteration], a_hist[1, 0:iteration], 'kx')
     plt.xlabel('$a_1$', fontsize=14)
     plt.ylabel('$a_2$', fontsize=14)
+    plt.legend()
     if(llim1 != -12.0):
         plt.xlim([llim1, ulim1])
         plt.ylim([llim2, ulim2])    
