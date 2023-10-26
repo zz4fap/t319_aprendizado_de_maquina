@@ -120,7 +120,7 @@ def plotGradientHistory(grad_hist, iteration, x_max=50):
     fig = plt.figure(figsize=(15,5))
 
     ax1 = fig.add_subplot(121)
-    ax1.plot(np.arange(0, iteration), grad_hist[0,0:iteration], 'b', label='$a_1$')
+    ax1.plot(np.arange(0, iteration), grad_hist[0,0:iteration], 'b', label='$\partial J_{e} / \partial a_1$')
     ax1.set_xlabel('Epoch', fontsize=14)
     ax1.set_ylabel('$\\nabla_e$', fontsize=14)
     ax1.set_title('Gradient vs. Epoch number')
@@ -135,7 +135,7 @@ def plotGradientHistory(grad_hist, iteration, x_max=50):
     ax4.grid()
 
     ax2 = fig.add_subplot(122)
-    ax2.plot(np.arange(0, iteration), grad_hist[1,0:iteration], 'r--', label='$a_2$')
+    ax2.plot(np.arange(0, iteration), grad_hist[1,0:iteration], 'r--', label='$\partial J_{e} / \partial a_2$')
     ax2.set_xlabel('Epoch', fontsize=14)
     ax2.set_ylabel('$\\nabla_e$', fontsize=14)
     ax2.set_title('Gradient vs. Epoch number')
