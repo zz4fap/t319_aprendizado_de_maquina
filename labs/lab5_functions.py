@@ -148,8 +148,14 @@ def plotHistogram(x1, x2):
     plt.title('Histograma')
     plt.show()
     
-def generateDataSet(N):
+def generateDataSetv0(N):
     x = np.linspace(-1.47,1,N).reshape(N,1)
     y = 1 + 2*x + 3*(x**2) + 4*(x**3) + 5*(x**4)
     y_noisy = y + np.random.randn(N,1)
     return x, y, y_noisy
+
+def generateDataSet(N):
+    x = np.linspace(-1,1,N).reshape(N,1)
+    y = 1 - 4*x + (x**2) - (x**3) + 6*(x**4)
+    y_noisy = y + np.random.randn(N,1)
+    return x, y.ravel(), y_noisy.ravel()
