@@ -68,8 +68,8 @@ def calculateErrorSurface(X, y, llim1=-12.0, ulim1=14.0, llim2=-12.0, ulim2=14.0
     J = np.zeros((M,M))
     for iter1 in range(0, M):
         for iter2 in range(0, M):
-            yhat = A1[iter1][iter2]*x1 + A2[iter1][iter2]*x2
-            J[iter1][iter2] = (1.0/N)*np.sum(np.square(y - yhat))
+            yhat = A1[iter1,iter2]*x1 + A2[iter1,iter2]*x2
+            J[iter1,iter2] = (1.0/N)*np.sum(np.square(y - yhat))
 
     return J, A1, A2
 
@@ -89,10 +89,11 @@ def plotCostFunction(A1, A2, J, a_opt, a_hist, iteration, llim1=-12.0, ulim1=14.
     ax = plt.subplot(1, 2, 2)
     cp = plt.contour(A1, A2, J)
     plt.clabel(cp, inline=1, fontsize=10)
-    plt.plot(a_opt[0], a_opt[1], c='r', marker='*', markersize=14)
+    plt.plot(a_opt[0], a_opt[1], c='r', marker='*', markersize=14, label='Optimal solution')
     plt.plot(a_hist[0, 0:iteration], a_hist[1, 0:iteration], 'kx')
     plt.xlabel('$a_1$', fontsize=14)
     plt.ylabel('$a_2$', fontsize=14)
+    plt.legend()
     if(llim1 != -12.0):
         plt.xlim([llim1, ulim1])
         plt.ylim([llim2, ulim2])    
@@ -113,13 +114,13 @@ def plotErroVersusIteration(Jgd, iteration):
     
 def plotGradientHistory(grad_hist, iteration, x_max=50):
     
-    y_min = round(max([min(grad_hist[0,0:iteration]), min(grad_hist[1,0:iteration])]))-1.0
-    y_max = np.ceil(max([max(grad_hist[0,0:iteration]), max(grad_hist[1,0:iteration])]))+1.0
+    y_min = round(max([min(grad_hist[0, 0:iteration]), min(grad_hist[1, 0:iteration])]))-1.0
+    y_max = np.ceil(max([max(grad_hist[0, 0:iteration]), max(grad_hist[1, 0:iteration])]))+1.0
 
     fig = plt.figure(figsize=(15,5))
 
     ax1 = fig.add_subplot(121)
-    ax1.plot(np.arange(0, iteration), grad_hist[0,0:iteration], 'b', label='$a_1$')
+    ax1.plot(np.arange(0, iteration), grad_hist[0,0:iteration], 'b', label='$\partial J_{e} / \partial a_1$')
     ax1.set_xlabel('Epoch', fontsize=14)
     ax1.set_ylabel('$\\nabla_e$', fontsize=14)
     ax1.set_title('Gradient vs. Epoch number')
@@ -134,7 +135,7 @@ def plotGradientHistory(grad_hist, iteration, x_max=50):
     ax4.grid()
 
     ax2 = fig.add_subplot(122)
-    ax2.plot(np.arange(0, iteration), grad_hist[1,0:iteration], 'r--', label='$a_2$')
+    ax2.plot(np.arange(0, iteration), grad_hist[1,0:iteration], 'r--', label='$\partial J_{e} / \partial a_2$')
     ax2.set_xlabel('Epoch', fontsize=14)
     ax2.set_ylabel('$\\nabla_e$', fontsize=14)
     ax2.set_title('Gradient vs. Epoch number')

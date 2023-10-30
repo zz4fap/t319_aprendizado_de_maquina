@@ -81,8 +81,8 @@ def plotCostFunction(A1, A2, J, a_opt, a_hist, iteration, llim1=-12.0, ulim1=14.
     ax = plt.subplot(1, 2, 1, projection='3d')
     ax.plot_surface(A1, A2, J, cmap=cm.coolwarm, linewidth=0, antialiased=False)
     # Add a color bar which maps values to colors.
-    ax.set_xlabel('$a_1$', fontsize=14)
-    ax.set_ylabel('$a_2$', fontsize=14)
+    ax.set_xlabel('$\hat{a}_1$', fontsize=14)
+    ax.set_ylabel('$\hat{a}_2$', fontsize=14)
     ax.set_zlabel('$J_e$', fontsize=14)
     plt.title('Cost-function\'s Surface')
 
@@ -91,8 +91,8 @@ def plotCostFunction(A1, A2, J, a_opt, a_hist, iteration, llim1=-12.0, ulim1=14.
     plt.clabel(cp, inline=1, fontsize=10)
     plt.plot(a_opt[0], a_opt[1], c='r', marker='*', markersize=14, label='Optimal solution')
     plt.plot(a_hist[0, 0:iteration], a_hist[1, 0:iteration], 'kx')
-    plt.xlabel('$a_1$', fontsize=14)
-    plt.ylabel('$a_2$', fontsize=14)
+    plt.xlabel('$\hat{a}_1$', fontsize=14)
+    plt.ylabel('$\hat{a}_2$', fontsize=14)
     plt.legend()
     if(llim1 != -12.0):
         plt.xlim([llim1, ulim1])
@@ -120,7 +120,7 @@ def plotGradientHistory(grad_hist, iteration, x_max=50):
     fig = plt.figure(figsize=(15,5))
 
     ax1 = fig.add_subplot(121)
-    ax1.plot(np.arange(0, iteration), grad_hist[0,0:iteration], 'b', label='$\partial J_{e} / \partial a_1$')
+    ax1.plot(np.arange(0, iteration), grad_hist[0,0:iteration], 'b', label='$\partial J_{e} / \partial \hat{a}_1$')
     ax1.set_xlabel('Epoch', fontsize=14)
     ax1.set_ylabel('$\\nabla_e$', fontsize=14)
     ax1.set_title('Gradient vs. Epoch number')
@@ -135,7 +135,7 @@ def plotGradientHistory(grad_hist, iteration, x_max=50):
     ax4.grid()
 
     ax2 = fig.add_subplot(122)
-    ax2.plot(np.arange(0, iteration), grad_hist[1,0:iteration], 'r--', label='$\partial J_{e} / \partial a_2$')
+    ax2.plot(np.arange(0, iteration), grad_hist[1,0:iteration], 'r--', label='$\partial J_{e} / \partial \hat{a}_2$')
     ax2.set_xlabel('Epoch', fontsize=14)
     ax2.set_ylabel('$\\nabla_e$', fontsize=14)
     ax2.set_title('Gradient vs. Epoch number')
