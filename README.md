@@ -56,12 +56,6 @@ Aqui vocês encontram os links para os laboratórios. Vocês podem baixar os not
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zz4fap/t319_aprendizado_de_maquina/main?filepath=labs%2FLaboratorio5.ipynb)
 
-### Laboratório 6
-
-[![Google Colab](https://badgen.net/badge/Launch/on%20Google%20Colab/blue?icon=terminal)](https://colab.research.google.com/github/zz4fap/t319_aprendizado_de_maquina/blob/main/labs/Laboratorio6.ipynb)
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zz4fap/t319_aprendizado_de_maquina/main?filepath=labs%2FLaboratorio6.ipynb)
-
 ### Projeto Final
 
 [![Google Colab](https://badgen.net/badge/Launch/on%20Google%20Colab/blue?icon=terminal)](https://colab.research.google.com/github/zz4fap/t319_aprendizado_de_maquina/blob/main/projeto/projeto_final_T319_2S2023.ipynb)
