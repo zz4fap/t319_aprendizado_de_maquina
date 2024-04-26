@@ -229,7 +229,7 @@ def generateDataSet(groupNumber, N, debug=False):
     
     return x, y, y_noisy
 
-def generateDatasets2(groupNumber, N):
+def generateDatasetsv2(groupNumber, N):
     np.random.seed(groupNumber)
     random.seed(groupNumber)
     
@@ -238,27 +238,21 @@ def generateDatasets2(groupNumber, N):
     a1 = 2*np.random.rand() - 1
     a2 = 2*np.random.rand() - 1
     a3 = 2*np.random.rand() - 1
+    a4 = 2*np.random.rand() - 1
     
     # Generate degrees.
-    degrees = random.sample(range(1, 6), 3)
+    degrees = random.sample(range(1, 8), 4)
     
     # Generate train dataset.
-    x_train = np.sort(2*np.random.rand(N, 1) - 1.0, axis=0)
-    y_train = a0 + a1*(x_train**degrees[0]) + a2*(x_train**degrees[1]) + a3*(x_train**degrees[2])
+    x = np.sort(2*np.random.rand(N, 1) - 1.0, axis=0)
+    y = a0 + a1*(x**degrees[0]) + a2*(x**degrees[1]) + a3*(x**degrees[2]) + a4*(x**degrees[3])
     
-    noise_var = (max(y_train) - min(y_train))/50.0
+    noise_var = (max(y) - min(y))/50.0
     
     w = np.sqrt(noise_var)*np.random.randn(N,1)
-    y_train_noisy = y_train + w
+    y_noisy = y + w
     
-    # Generate test dataset.
-    N = int(N/2)
-    x_test = np.linspace(-1,1,N).reshape(N,1)
-    y_test = a0 + a1*(x_test**degrees[0]) + a2*(x_test**degrees[1]) + a3*(x_test**degrees[2])
-    w = np.sqrt(noise_var)*np.random.randn(N,1)
-    y_test_noisy = y_test + w
-    
-    return x_train, y_train, y_train_noisy, x_test, y_test_noisy
+    return x, y, y_noisy
 
 def plotHoldOutResultsv2(poly_orders, mse_train_vec, mse_val_vec):
     # Plot results.
