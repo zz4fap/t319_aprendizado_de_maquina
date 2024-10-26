@@ -255,8 +255,8 @@ def generateDatasetsv2(groupNumber, N):
     return x, y, y_noisy
 
 def generateDatasetsv3(groupNumber, N):
-    np.random.seed(groupNumber)
-    random.seed(groupNumber)
+    np.random.seed(groupNumber*3)
+    random.seed(groupNumber*2)
     
     # Generate random wights.
     a0 = 20*np.random.rand() - 10
