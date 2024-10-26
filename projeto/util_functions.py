@@ -254,6 +254,31 @@ def generateDatasetsv2(groupNumber, N):
     
     return x, y, y_noisy
 
+def generateDatasetsv3(groupNumber, N):
+    np.random.seed(groupNumber)
+    random.seed(groupNumber)
+    
+    # Generate random wights.
+    a0 = 20*np.random.rand() - 10
+    a1 = 2*np.random.rand() - 1
+    a2 = 2*np.random.rand() - 1
+    a3 = 2*np.random.rand() - 1
+    a4 = 2*np.random.rand() - 1
+    
+    # Generate degrees.
+    degrees = random.sample(range(1, 8), 4)
+    
+    # Generate train dataset.
+    x = np.sort(2*np.random.rand(N, 1) - 1.0, axis=0)
+    y = a0 + a1*(x**degrees[0]) + a2*(x**degrees[1]) + a3*(x**degrees[2]) + a4*(x**degrees[3])
+    
+    noise_var = (max(y) - min(y))/50.0
+    
+    w = np.sqrt(noise_var)*np.random.randn(N,1)
+    y_noisy = y + w
+    
+    return x, y, y_noisy
+
 def plotHoldOutResultsv2(poly_orders, mse_train_vec, mse_val_vec):
     # Plot results.
     fig = plt.figure()
