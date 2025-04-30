@@ -254,7 +254,7 @@ def generateDatasetsv2(groupNumber, N):
     
     return x, y, y_noisy
 
-def generateDatasetsv3(groupNumber, N, mult1=13, mult2=22):
+def generateDatasetsv3(groupNumber, N, mult1=3, mult2=2):
     np.random.seed(groupNumber*mult1)
     random.seed(groupNumber*mult2)
     
